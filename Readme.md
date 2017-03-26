@@ -8,6 +8,7 @@ Search with search.js
 run with `node search` 
 
 Index is stored in MyIndex in Binary format for compression of size 
+
 **Conclusion**
 
  elastuclunr beats search-index.
