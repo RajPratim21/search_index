@@ -1,4 +1,4 @@
-#Basic seaech-index implemntation for searching
+## Basic seaech-index implemntation for searching
 
 This is a basic search engine implemented for analysing performance of Elasticlunr vs seach-index.js
 
@@ -13,7 +13,7 @@ Index is stored in MyIndex in Binary format for compression of size
 
 **Conclusion**
 
- elastuclunr beats search-index.
+Levi beats everyone.
  
 ## Visualization
 
