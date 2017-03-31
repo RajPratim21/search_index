@@ -1,19 +1,18 @@
-var options = {indexPath: 'My_index', logLevel: 'info'}
-var searchIndex = require('search-index')
-var dataset = require('./train-v1.1.json')
+var options = {indexPath: 'My_index'}
+//var options = {} //put the startup options you want here
+var SearchIndex = require('search-index')
+SearchIndex(options, function(err, index) {
 
-searchIndex(options, function(err, si) {
-    //si.add(dataset, {}, function(err) {
-      if (!err) console.log('indexed!')
-      else return callback(err, {})
-      console.log('doing a test search...')
-      t1 = new Date().getTime();
-      si.search({"query": {AND: {"data":["Beyonce married to"]}}}, function(err, results) {
-        console.log('results: ' + results.totalHits)
-        t2 = new Date().getTime();
-        console.log('Time taken by search-index '+ (t2-t1) +' ms');
-        //return callback(err, results)
-    })
+var t0 = new Date().getTime();
+
+//searching in the index
+index.search({"query": {AND: {"context":["development" ]}}},
+ function(err, results) {
+        console.log('total hits: ' + results.totalHits)
+        var t1 = new Date().getTime();
+        console.log((t1-t0)+' milliseconds')
     
-  })
+        //return callback(err, results)
+      })
 
+});
