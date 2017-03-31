@@ -3,6 +3,8 @@
 This is a basic search engine implemented for analysing performance of Elasticlunr vs seach-index.js
 
 ## to run
+setup with `node setup`
+
 Search with search.js
 
 run with `node search` 
