@@ -6,7 +6,7 @@ SearchIndex(options, function(err, index) {
 var t0 = new Date().getTime();
 
 //searching in the index
-index.search({"query": {AND: {"context":["development" ]}}},
+index.search({"query": {AND: {"context":[ "feature" ]}}},
  function(err, results) {
         console.log('total hits: ' + results.totalHits)
         var t1 = new Date().getTime();

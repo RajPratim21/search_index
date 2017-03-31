@@ -15,7 +15,7 @@ Index is stored in MyIndex in Binary format for compression of size
  
 ## Visualization
 
- ![](/data_ploting.png)
+ ![](/plot.png)
  
 ## texts that are searched 
  
